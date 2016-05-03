@@ -2,7 +2,11 @@
   "name": "turing-shortbus",
   "version": "0.0.1",
   "scripts": {
-    "tsc": "tsc"
+    "clean": "rm -rf build",
+    "copyhtml": "cp src/index.html build/index.html",
+    "pretsc": "npm run clean",
+    "tsc": "tsc",
+    "posttsc": "npm run copyhtml"
   },
   "devDependencies": {
     "typescript": "1.8.10"
