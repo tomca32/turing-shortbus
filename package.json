@@ -9,6 +9,7 @@
     "tslint": "tslint ./src/**/*.ts"
   },
   "devDependencies": {
+    "codelyzer": "0.0.19",
     "ts-loader": "^0.8.2",
     "tslint": "^3.9.0",
     "typescript": "1.8.10",
