@@ -1,6 +1,10 @@
-import {sumLog} from './sumlog';
+import {sumLog} from "./sumlog";
 
-let x:number = 1;
-let y: number = 2;
+function identity<T>(x: T): T {
+    return x;
+}
+
+let x: number = identity(1);
+let y: number = identity(2);
 
 sumLog(x, y);

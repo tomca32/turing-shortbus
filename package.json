@@ -4,11 +4,13 @@
   "scripts": {
     "clean": "rm -rf build",
     "copyhtml": "cp ./src/index.html ./build/index.html",
-    "prewebpack": "npm run clean && mkdir build && npm run copyhtml",
-    "webpack": "webpack"
+    "prewebpack": "npm run tslint && npm run clean && mkdir build && npm run copyhtml",
+    "webpack": "webpack",
+    "tslint": "tslint ./src/**/*.ts"
   },
   "devDependencies": {
     "ts-loader": "^0.8.2",
+    "tslint": "^3.9.0",
     "typescript": "1.8.10",
     "webpack": "^1.13.0"
   }
