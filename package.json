@@ -4,11 +4,8 @@
   "scripts": {
     "clean": "rm -rf build",
     "copyhtml": "cp ./src/index.html ./build/index.html",
-    "pretsc": "npm run clean",
-    "tsc": "tsc",
     "prewebpack": "npm run clean && mkdir build && npm run copyhtml",
-    "webpack": "webpack",
-    "posttsc": "npm run copyhtml"
+    "webpack": "webpack"
   },
   "devDependencies": {
     "ts-loader": "^0.8.2",
